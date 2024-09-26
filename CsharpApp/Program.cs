@@ -37,6 +37,7 @@
 
 
 
+<<<<<<< HEAD
 //using CsharpApp;
 //using System.Runtime.CompilerServices;
 
@@ -102,3 +103,61 @@ users user = new users();
 user.username = Console.ReadLine();
 user.password = Console.ReadLine();
 Console.WriteLine(user.login());
+=======
+using CsharpApp;
+using System.Runtime.CompilerServices;
+
+List<Employee> employees = new List<Employee>
+{
+    new Employee
+    {
+        id = 1,
+        name="ALI",
+        HiringDate = DateTime.Now,
+        Salary = 1000
+    },new Employee
+    {
+        id = 2,
+        name="ahmad",
+        HiringDate = DateTime.Now,
+        Salary = 500
+    },new Employee
+    {
+        id = 3,
+        name="omar",
+        HiringDate = DateTime.Now,
+        Salary = 800
+    }
+};
+
+Console.WriteLine("id \tname\tHiring Date\t salary");
+Console.WriteLine("-- \t----\t-----------\t ------");
+
+for (int i = 4; i < 7; i++)
+{
+    employees.Add(new Employee
+    {
+        id = Convert.ToInt32(Console.ReadLine()),
+        name = Console.ReadLine(),
+        HiringDate = DateTime.Now,
+        Salary = Convert.ToInt32(Console.ReadLine())
+    });
+
+
+
+
+}
+
+foreach (Employee emp in employees)
+{
+    Console.WriteLine($"{emp.id} \t {emp.name} \t {emp.HiringDate.ToShortDateString()} \t {emp.Salary}\t {emp.ssc} \t {emp.sscfunction()}");
+
+    //best practise
+    //make an obj then emp.Add(obj)
+}
+
+//employees[0].sscfunction(employees[0].Salary);
+
+
+
+>>>>>>> a8b55abe46e08f46b06aec05e54d58003cf62e99
