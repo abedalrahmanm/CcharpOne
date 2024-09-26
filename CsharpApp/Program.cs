@@ -103,9 +103,8 @@ users user = new users();
 user.username = Console.ReadLine();
 user.password = Console.ReadLine();
 Console.WriteLine(user.login());
-=======
-using CsharpApp;
-using System.Runtime.CompilerServices;
+
+
 
 List<Employee> employees = new List<Employee>
 {
@@ -160,4 +159,3 @@ foreach (Employee emp in employees)
 
 
 
->>>>>>> a8b55abe46e08f46b06aec05e54d58003cf62e99
